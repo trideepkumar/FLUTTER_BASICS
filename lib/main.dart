@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
-import '/screens/Listview.dart';
+import '/screens/Stacks.dart';
+// import '/screens/Floatingbutton.dart';
+// import '/screens/Appbar.dart'; 
+// import '/screens/Navdrawer.dart';
+// import '/screens/Article.dart';
+// import '/screens/Listview.dart';
 // import '/screens/RowsandCol.dart';
 // import '/screens/Dashboard.dart';
 // import '/screens/Home.dart';
 // import '/screens/dashboard.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -13,13 +19,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner:false, 
+      debugShowCheckedModeBanner: false,
       title: 'My Flutter App',
       themeMode: ThemeMode.system,
       // home: Home(),
       // home: Dashboard(),
       // home: RowsandCol(),
-      home: Listview(),
+      // home: Listview(),
+      // home: Article(),
+      // home: Floatingbutton(),
+      home:Stacks(),
+      // home: Navdrawer(),
     );
   }
 }

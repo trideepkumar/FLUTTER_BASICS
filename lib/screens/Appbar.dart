@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 
-
-class Article extends StatelessWidget {
-  const Article({super.key});
+class Appbar extends StatelessWidget {
+  const Appbar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-         backgroundColor: const Color.fromARGB(255, 170, 174, 175),
-      appBar: AppBar(
+       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {},
@@ -41,13 +39,6 @@ class Article extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)),
         ), // Moved titleTextStyle inside Text widget as a style property
-      ),
-      body: Container(
-        child: ListView.builder(
-               itemBuilder: (context,index){
-                return Text(index.toString());
-               },
-        ),
       ),
     );
   }
