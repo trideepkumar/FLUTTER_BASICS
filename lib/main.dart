@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import '/screens/Stacks.dart';
+import '/statefullWidgets/Loginform.dart';
+// import '/statefullWidgets/Pushandpop.dart';
+// import '/statefullWidgets/favoriteicon.dart';
+// import '/screens/Stacks.dart';
 // import '/screens/Floatingbutton.dart';
 // import '/screens/Appbar.dart'; 
 // import '/screens/Navdrawer.dart';
@@ -28,8 +31,14 @@ class MyApp extends StatelessWidget {
       // home: Listview(),
       // home: Article(),
       // home: Floatingbutton(),
-      home:Stacks(),
+      // home:Stacks(),
       // home: Navdrawer(),
+      home: Scaffold(
+        // body: favoriteicon(),
+        // body: Pushandpop(),
+        body: Loginform(),
+        
+      ),
     );
   }
-}
+} 
